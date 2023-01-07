@@ -1,4 +1,8 @@
 (function ($) {
+// Perform database operations here
+
+
+
     "use strict";
 
     // Superfish on nav menu
@@ -61,11 +65,11 @@
     $(".nav-menu a, #mobile-nav a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
-            
+
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top
             }, 1500, 'easeInOutExpo');
-            
+
             if ($(this).parents('.nav-menu').length) {
                 $('.nav-menu .menu-active').removeClass('menu-active');
                 $(this).closest('li').addClass('menu-active');
