@@ -1,4 +1,5 @@
 Personal Website
+
 Welcome to my personal website! On this site, you can learn about my education and work experience, as well as get in touch with me through a contact form.
 
 This website is built using HTML, CSS, and JavaScript for the frontend, and Node.js and PostgreSQL for the backend. The contact form stores user input data in a database, so I can keep track of messages and inquiries.
