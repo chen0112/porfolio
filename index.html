@@ -362,7 +362,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="">
-                            <form action="http://localhost:3000/api/users" method="POST">
+                            <form action="https://formspree.io/f/xqkozdzj" method="POST">
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <input type="text" name="name" class="form-control" placeholder="Your Name" required=""/>
@@ -379,29 +379,29 @@
                                 </div>
                                 <div><button type="submit">Send Message</button></div>
 
-                                <script>
-                                    const form = document.querySelector('form');
-                                    form.addEventListener('submit', e => {
-                                        e.preventDefault();
+<!--                                <script>&ndash;&gt; for running the website on local machine-->
+<!--                                    const form = document.querySelector('form');-->
+<!--                                    form.addEventListener('submit', e => {-->
+<!--                                        e.preventDefault();-->
 
-                                        const name = form.elements.name.value;
-                                        const email = form.elements.email.value;
-                                        const subject = form.elements.subject.value;
-                                        const messages = form.elements.subject.value;
+<!--                                        const name = form.elements.name.value;-->
+<!--                                        const email = form.elements.email.value;-->
+<!--                                        const subject = form.elements.subject.value;-->
+<!--                                        const messages = form.elements.subject.value;-->
 
-                                        fetch('http://localhost:3000/api/users', {
-                                            method: 'POST',
-                                            headers: {
-                                                'Content-Type': 'application/json'
-                                            },
-                                            body: JSON.stringify({ name, email, subject, messages })
-                                        })
-                                            .then(response => response.json())
-                                            .then(data => {
-                                                console.log(data);
-                                            });
-                                    });
-                                </script>
+<!--                                        fetch('http://localhost:3000/api/users', {-->
+<!--                                            method: 'POST',-->
+<!--                                            headers: {-->
+<!--                                                'Content-Type': 'application/json'-->
+<!--                                            },-->
+<!--                                            body: JSON.stringify({ name, email, subject, messages })-->
+<!--                                        })-->
+<!--                                            .then(response => response.json())-->
+<!--                                            .then(data => {-->
+<!--                                                console.log(data);-->
+<!--                                            });-->
+<!--                                    });-->
+<!--                                </script>-->
                             </form>
                         </div>
                     </div>
@@ -415,7 +415,6 @@
             <div class="container">
                 <div class="copyright">
                     <p>&copy; Copyright Alex Chen. All Rights Reserved</p>
-                    <p>Powered by <a href="https://htmlcodex.com">HTML Codex</a></p>
                 </div>
             </div>
         </div>
