@@ -1,8 +1,5 @@
 (function ($) {
 // Perform database operations here
-
-
-
     "use strict";
 
     // Superfish on nav menu

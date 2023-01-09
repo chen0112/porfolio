@@ -380,21 +380,21 @@
                                 <div><button type="submit">Send Message</button></div>
 
                                 <script>
-
                                     const form = document.querySelector('form');
-
                                     form.addEventListener('submit', e => {
                                         e.preventDefault();
 
                                         const name = form.elements.name.value;
                                         const email = form.elements.email.value;
+                                        const subject = form.elements.subject.value;
+                                        const messages = form.elements.subject.value;
 
                                         fetch('http://localhost:3000/api/users', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json'
                                             },
-                                            body: JSON.stringify({ name, email })
+                                            body: JSON.stringify({ name, email, subject, messages })
                                         })
                                             .then(response => response.json())
                                             .then(data => {
